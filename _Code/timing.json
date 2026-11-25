@@ -1,0 +1,647 @@
+[
+  {
+    "key": "cover",
+    "chapter": 1,
+    "heading": "Gaussian elimination",
+    "narration": "Three equations can hide one point in space. Gaussian elimination makes that point easier to find. In this video, we’ll turn a three-by-three system into a staircase and use it to solve for x, y, and z.",
+    "start": 0,
+    "duration": 16.0,
+    "cues": [
+      [
+        0.5,
+        3.120975056689342,
+        "Three equations can hide one point in space."
+      ],
+      [
+        3.2209750566893423,
+        6.190249433106576,
+        "Gaussian elimination makes that point easier to find."
+      ],
+      [
+        6.290249433106576,
+        12.696077097505668,
+        "In this video, we’ll turn a three-by-three system into a staircase and use it to solve for x, y, and z."
+      ]
+    ]
+  },
+  {
+    "key": "hook",
+    "chapter": 1,
+    "heading": "A zero in the first column",
+    "narration": "This system starts with an equation that has no x term. That means the top left entry of our matrix will be zero. Keep that detail in mind when we choose the first pivot.",
+    "start": 16.0,
+    "duration": 12.0,
+    "cues": [
+      [
+        0.5,
+        3.6550340136054422,
+        "This system starts with an equation that has no x term."
+      ],
+      [
+        3.7550340136054423,
+        7.23514739229025,
+        "That means the top left entry of our matrix will be zero."
+      ],
+      [
+        7.335147392290249,
+        10.397301587301587,
+        "Keep that detail in mind when we choose the first pivot."
+      ]
+    ]
+  },
+  {
+    "key": "system",
+    "chapter": 2,
+    "heading": "What counts as a solution?",
+    "narration": "We want one ordered triple that makes all three equations true at once. Each equation is a constraint on that triple. If a proposed answer fails even one equation, it fails the whole system.",
+    "start": 28.0,
+    "duration": 15.0,
+    "cues": [
+      [
+        0.5,
+        4.2935827664399095,
+        "We want one ordered triple that makes all three equations true at once."
+      ],
+      [
+        4.393582766439909,
+        6.840408163265305,
+        "Each equation is a constraint on that triple."
+      ],
+      [
+        6.940408163265306,
+        11.604739229024943,
+        "If a proposed answer fails even one equation, it fails the whole system."
+      ]
+    ]
+  },
+  {
+    "key": "augment",
+    "chapter": 2,
+    "heading": "From equations to a matrix",
+    "narration": "Write one row for each equation. The first three columns hold the coefficients of x, y, and z. A missing x term gives a zero. The last column, after the bar, holds the constants.",
+    "start": 43.0,
+    "duration": 16.0,
+    "cues": [
+      [
+        0.5,
+        2.5056462585034014,
+        "Write one row for each equation."
+      ],
+      [
+        2.6056462585034015,
+        6.468888888888889,
+        "The first three columns hold the coefficients of x, y, and z."
+      ],
+      [
+        6.568888888888889,
+        8.667414965986394,
+        "A missing x term gives a zero."
+      ],
+      [
+        8.767414965986394,
+        11.934058956916099,
+        "The last column, after the bar, holds the constants."
+      ]
+    ]
+  },
+  {
+    "key": "rules",
+    "chapter": 2,
+    "heading": "Three legal moves",
+    "narration": "We can swap two rows, multiply a row by a nonzero number, or replace a row by adding a multiple of another row. Each operation can be undone. That is why each preserves the solution set.",
+    "start": 59.0,
+    "duration": 16.0,
+    "cues": [
+      [
+        0.5,
+        7.219297052154195,
+        "We can swap two rows, multiply a row by a nonzero number, or replace a row by adding a multiple of another row."
+      ],
+      [
+        7.319297052154195,
+        9.243673469387755,
+        "Each operation can be undone."
+      ],
+      [
+        9.343673469387756,
+        12.034308390022677,
+        "That is why each preserves the solution set."
+      ]
+    ]
+  },
+  {
+    "key": "lines",
+    "chapter": 3,
+    "heading": "First, look at two lines",
+    "narration": "Let’s see what row replacement does in two variables. The teal line is x plus two y equals eight. The purple line is two x plus three y equals thirteen. They cross at x equals two and y equals three.",
+    "start": 75.0,
+    "duration": 18.0,
+    "cues": [
+      [
+        0.5,
+        4.0265532879818595,
+        "Let’s see what row replacement does in two variables."
+      ],
+      [
+        4.126553287981859,
+        6.979727891156463,
+        "The teal line is x plus two y equals eight."
+      ],
+      [
+        7.0797278911564625,
+        10.617891156462585,
+        "The purple line is two x plus three y equals thirteen."
+      ],
+      [
+        10.717891156462585,
+        13.663945578231292,
+        "They cross at x equals two and y equals three."
+      ]
+    ]
+  },
+  {
+    "key": "rotate",
+    "chapter": 3,
+    "heading": "Change a line, keep the crossing",
+    "narration": "Keep the teal equation. From the purple equation, subtract twice the teal equation. The x terms cancel. Negative y equals negative three, so y equals three. Watch the purple line turn about the same crossing.",
+    "start": 93.0,
+    "duration": 18.0,
+    "cues": [
+      [
+        0.5,
+        1.8903174603174604,
+        "Keep the teal equation."
+      ],
+      [
+        1.9903174603174603,
+        5.586530612244898,
+        "From the purple equation, subtract twice the teal equation."
+      ],
+      [
+        5.686530612244898,
+        7.2858276643990925,
+        "The x terms cancel."
+      ],
+      [
+        7.385827664399093,
+        11.643809523809523,
+        "Negative y equals negative three, so y equals three."
+      ],
+      [
+        11.743809523809524,
+        14.713083900226758,
+        "Watch the purple line turn about the same crossing."
+      ]
+    ]
+  },
+  {
+    "key": "reverse",
+    "chapter": 3,
+    "heading": "Why the operation is reversible",
+    "narration": "If a point fits both old equations, it also fits their difference. For the reverse direction, keep the first equation and add twice the first equation to the new second equation. The original second equation comes back.",
+    "start": 111.0,
+    "duration": 16.0,
+    "cues": [
+      [
+        0.5,
+        4.7812018140589565,
+        "If a point fits both old equations, it also fits their difference."
+      ],
+      [
+        4.881201814058957,
+        10.857460317460317,
+        "For the reverse direction, keep the first equation and add twice the first equation to the new second equation."
+      ],
+      [
+        10.957460317460317,
+        13.27657596371882,
+        "The original second equation comes back."
+      ]
+    ]
+  },
+  {
+    "key": "swap",
+    "chapter": 4,
+    "heading": "A zero pivot calls for a swap",
+    "narration": "Back to the three-by-three system. Zero cannot serve as a pivot. We could bring either nonzero entry up, so swap rows one and two to bring the one into the top left. The equations are the same, just in a different order.",
+    "start": 127.0,
+    "duration": 19.0,
+    "cues": [
+      [
+        0.5,
+        2.435986394557823,
+        "Back to the three-by-three system."
+      ],
+      [
+        2.535986394557823,
+        4.355873015873016,
+        "Zero cannot serve as a pivot."
+      ],
+      [
+        4.455873015873015,
+        10.397301587301587,
+        "We could bring either nonzero entry up, so swap rows one and two to bring the one into the top left."
+      ],
+      [
+        10.497301587301587,
+        13.443356009070294,
+        "The equations are the same, just in a different order."
+      ]
+    ]
+  },
+  {
+    "key": "pivot",
+    "chapter": 4,
+    "heading": "Choose the multiplier",
+    "narration": "The first pivot is now one. The entry under it in row two is already zero. Row three starts with two. Divide that target entry by the pivot to get the multiplier, two.",
+    "start": 146.0,
+    "duration": 14.0,
+    "cues": [
+      [
+        0.5,
+        2.2618367346938775,
+        "The first pivot is now one."
+      ],
+      [
+        2.3618367346938776,
+        5.319501133786848,
+        "The entry under it in row two is already zero."
+      ],
+      [
+        5.419501133786849,
+        7.1581179138322,
+        "Row three starts with two."
+      ],
+      [
+        7.2581179138322,
+        11.028480725623583,
+        "Divide that target entry by the pivot to get the multiplier, two."
+      ]
+    ]
+  },
+  {
+    "key": "eliminate_x",
+    "chapter": 4,
+    "heading": "Clear x from the third row",
+    "narration": "Replace row three by row three minus twice row one. Multiply every entry of row one by two first. The new x entry is zero, and the new y and z entries are negative one and six. The constant takes part in the same subtraction. Seventeen minus fourteen leaves three.",
+    "start": 160.0,
+    "duration": 21.0,
+    "cues": [
+      [
+        0.5,
+        3.8175736961451245,
+        "Replace row three by row three minus twice row one."
+      ],
+      [
+        3.9175736961451246,
+        6.875238095238095,
+        "Multiply every entry of row one by two first."
+      ],
+      [
+        6.975238095238096,
+        11.77888888888889,
+        "The new x entry is zero, and the new y and z entries are negative one and six."
+      ],
+      [
+        11.87888888888889,
+        14.488253968253968,
+        "The constant takes part in the same subtraction."
+      ],
+      [
+        14.58825396825397,
+        17.01185941043084,
+        "Seventeen minus fourteen leaves three."
+      ]
+    ]
+  },
+  {
+    "key": "predict",
+    "chapter": 4,
+    "heading": "Pause and predict",
+    "narration": "The second pivot is one, in the y column. Directly under it is negative one. What multiple of row two should we add to row three to make that entry zero? Take a moment to predict it.",
+    "start": 181.0,
+    "duration": 14.0,
+    "cues": [
+      [
+        0.5,
+        2.9352154195011337,
+        "The second pivot is one, in the y column."
+      ],
+      [
+        3.035215419501134,
+        5.226621315192744,
+        "Directly under it is negative one."
+      ],
+      [
+        5.326621315192744,
+        9.189863945578232,
+        "What multiple of row two should we add to row three to make that entry zero?"
+      ],
+      [
+        9.289863945578231,
+        10.912380952380952,
+        "Take a moment to predict it."
+      ]
+    ]
+  },
+  {
+    "key": "eliminate_y",
+    "chapter": 4,
+    "heading": "Clear y from the third row",
+    "narration": "Add one copy of row two to row three. Negative one plus one makes zero. Six plus two makes eight in the z column. Three plus five makes eight on the right. The last row now says eight z equals eight. Row two stays unchanged because we only replaced row three.",
+    "start": 195.0,
+    "duration": 21.0,
+    "cues": [
+      [
+        0.5,
+        3.1790249433106577,
+        "Add one copy of row two to row three."
+      ],
+      [
+        3.2790249433106577,
+        5.644580498866214,
+        "Negative one plus one makes zero."
+      ],
+      [
+        5.744580498866213,
+        7.994036281179138,
+        "Six plus two makes eight in the z column."
+      ],
+      [
+        8.094036281179138,
+        10.146122448979591,
+        "Three plus five makes eight on the right."
+      ],
+      [
+        10.246122448979591,
+        12.878707482993196,
+        "The last row now says eight z equals eight."
+      ],
+      [
+        12.978707482993197,
+        16.94643990929705,
+        "Row two stays unchanged because we only replaced row three."
+      ]
+    ]
+  },
+  {
+    "key": "echelon",
+    "chapter": 4,
+    "heading": "Read the pivot staircase",
+    "narration": "The leading entries step right as we move down, and the entries below each pivot are zero. This is row echelon form. There is a pivot in every variable column, so we can solve one variable at a time.",
+    "start": 216.0,
+    "duration": 14.0,
+    "cues": [
+      [
+        0.5,
+        5.44297052154195,
+        "The leading entries step right as we move down, and the entries below each pivot are zero."
+      ],
+      [
+        5.5429705215419505,
+        7.142267573696145,
+        "This is row echelon form."
+      ],
+      [
+        7.242267573696146,
+        12.254897959183673,
+        "There is a pivot in every variable column, so we can solve one variable at a time."
+      ]
+    ]
+  },
+  {
+    "key": "solve_z",
+    "chapter": 4,
+    "heading": "Back substitute, starting with z",
+    "narration": "Start at the bottom, where only one unknown remains. Eight z equals eight. Divide both sides by eight to get z equals one. Save that value for the row above.",
+    "start": 230.0,
+    "duration": 14.0,
+    "cues": [
+      [
+        0.5,
+        3.4576643990929705,
+        "Start at the bottom, where only one unknown remains."
+      ],
+      [
+        3.5576643990929706,
+        5.191791383219955,
+        "Eight z equals eight."
+      ],
+      [
+        5.291791383219955,
+        8.504875283446712,
+        "Divide both sides by eight to get z equals one."
+      ],
+      [
+        8.604875283446713,
+        10.668571428571429,
+        "Save that value for the row above."
+      ]
+    ]
+  },
+  {
+    "key": "solve_y",
+    "chapter": 4,
+    "heading": "Carry z into the next equation",
+    "narration": "Row two says y plus two z equals five. Replace z by one. The term two z becomes two, so subtract two from five. That gives y equals three.",
+    "start": 244.0,
+    "duration": 14.0,
+    "cues": [
+      [
+        0.5,
+        3.5389342403628117,
+        "Row two says y plus two z equals five."
+      ],
+      [
+        3.6389342403628118,
+        5.09891156462585,
+        "Replace z by one."
+      ],
+      [
+        5.198911564625851,
+        8.760294784580498,
+        "The term two z becomes two, so subtract two from five."
+      ],
+      [
+        8.8602947845805,
+        11.028480725623584,
+        "That gives y equals three."
+      ]
+    ]
+  },
+  {
+    "key": "solve_x",
+    "chapter": 4,
+    "heading": "Carry y and z into the first row",
+    "narration": "The first row says x plus two y minus z equals seven. Substitute three for y and one for z. The known terms combine to six minus one, or five. Subtract five from seven to get x equals two.",
+    "start": 258.0,
+    "duration": 16.0,
+    "cues": [
+      [
+        0.5,
+        4.223922902494331,
+        "The first row says x plus two y minus z equals seven."
+      ],
+      [
+        4.323922902494331,
+        6.805578231292517,
+        "Substitute three for y and one for z."
+      ],
+      [
+        6.905578231292518,
+        10.269591836734694,
+        "The known terms combine to six minus one, or five."
+      ],
+      [
+        10.369591836734696,
+        13.513015873015874,
+        "Subtract five from seven to get x equals two."
+      ]
+    ]
+  },
+  {
+    "key": "verify",
+    "chapter": 5,
+    "heading": "Check all three original equations",
+    "narration": "Put x equals two, y equals three, and z equals one back into the original equations. The left sides are five, seven, and seventeen. Each matches its own right side, so the ordered triple satisfies the entire system.",
+    "start": 274.0,
+    "duration": 17.0,
+    "cues": [
+      [
+        0.5,
+        6.348548752834467,
+        "Put x equals two, y equals three, and z equals one back into the original equations."
+      ],
+      [
+        6.448548752834467,
+        9.68485260770975,
+        "The left sides are five, seven, and seventeen."
+      ],
+      [
+        9.784852607709752,
+        14.9484126984127,
+        "Each matches its own right side, so the ordered triple satisfies the entire system."
+      ]
+    ]
+  },
+  {
+    "key": "planes",
+    "chapter": 5,
+    "heading": "Three planes, one common point",
+    "narration": "In three dimensions, the original equations are planes. Two of them meet along a line. The third plane cuts that line at one point. Its coordinates are two, three, one. Since that third plane meets the line only once, our solution is unique.",
+    "start": 291.0,
+    "duration": 21.0,
+    "cues": [
+      [
+        0.5,
+        3.701473922902494,
+        "In three dimensions, the original equations are planes."
+      ],
+      [
+        3.801473922902494,
+        5.400770975056689,
+        "Two of them meet along a line."
+      ],
+      [
+        5.500770975056689,
+        8.19140589569161,
+        "The third plane cuts that line at one point."
+      ],
+      [
+        8.291405895691609,
+        10.83111111111111,
+        "Its coordinates are two, three, one."
+      ],
+      [
+        10.931111111111111,
+        15.084603174603174,
+        "Since that third plane meets the line only once, our solution is unique."
+      ]
+    ]
+  },
+  {
+    "key": "slice",
+    "chapter": 5,
+    "heading": "The graph comes back at z = 1",
+    "narration": "The bottom row forces z to be one. Look at that horizontal slice through the three planes. The two slanted lines are the ones we started with. The remaining plane gives y equals three. All three pass through two, three.",
+    "start": 312.0,
+    "duration": 17.0,
+    "cues": [
+      [
+        0.5,
+        2.5520861678004536,
+        "The bottom row forces z to be one."
+      ],
+      [
+        2.6520861678004537,
+        5.551700680272109,
+        "Look at that horizontal slice through the three planes."
+      ],
+      [
+        5.651700680272109,
+        8.516485260770974,
+        "The two slanted lines are the ones we started with."
+      ],
+      [
+        8.616485260770975,
+        11.51609977324263,
+        "The remaining plane gives y equals three."
+      ],
+      [
+        11.616099773242631,
+        13.621746031746031,
+        "All three pass through two, three."
+      ]
+    ]
+  },
+  {
+    "key": "recap",
+    "chapter": 6,
+    "heading": "The method in three moves",
+    "narration": "First, write the augmented matrix. Next, choose nonzero pivots and clear the entries below each one, using a row swap when needed. Finally, back substitute from the bottom and check the result in the original system.",
+    "start": 329.0,
+    "duration": 16.0,
+    "cues": [
+      [
+        0.5,
+        3.2138548752834466,
+        "First, write the augmented matrix."
+      ],
+      [
+        3.3138548752834467,
+        9.406213151927439,
+        "Next, choose nonzero pivots and clear the entries below each one, using a row swap when needed."
+      ],
+      [
+        9.506213151927438,
+        14.158934240362813,
+        "Finally, back substitute from the bottom and check the result in the original system."
+      ]
+    ]
+  },
+  {
+    "key": "credits",
+    "chapter": 6,
+    "heading": "Summary & credits",
+    "narration": "The equations can change form while keeping exactly the same solutions. That idea is what lets us turn three equations into three short steps. Thanks for watching.",
+    "start": 345.0,
+    "duration": 15.0,
+    "cues": [
+      [
+        0.5,
+        4.966961451247165,
+        "The equations can change form while keeping exactly the same solutions."
+      ],
+      [
+        5.066961451247166,
+        9.127573696145125,
+        "That idea is what lets us turn three equations into three short steps."
+      ],
+      [
+        9.227573696145125,
+        10.40891156462585,
+        "Thanks for watching."
+      ]
+    ]
+  }
+]
